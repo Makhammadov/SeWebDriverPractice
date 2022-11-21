@@ -32,4 +32,6 @@ driver.find_element(By.ID, "tState").send_keys("TN")
 #driver.find_element(By.CLASS_NAME, "btn-primary").click() #not working
 driver.find_element(By.ID, "zip-by-address").click()
 
-driver.get_screenshot_as_png()
+driver.maximize_window()
+driver.implicitly_wait(10)
+driver.save_screenshot("screenshot1.png")
