@@ -29,4 +29,4 @@ for state in states_list:
         break
 
 # time.sleep(10)
-# driver.close()
+driver.close()
