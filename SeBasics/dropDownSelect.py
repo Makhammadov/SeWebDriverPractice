@@ -21,7 +21,6 @@ time.sleep(5)
 
 state_d_d = Select(driver.find_element(By.ID, "tState"))
 
-
 states_list = state_d_d.options
 for state in states_list:
     print(state.text)
