@@ -25,3 +25,12 @@ act_chain.move_to_element(sky_miles_tab).perform()
 how_to_earn_miles = driver.find_element(By.ID, "secondary-static-link-0")
 how_to_earn_miles.click()
 
+driver.back()
+time.sleep(3)
+driver.forward()
+time.sleep(3)
+driver.back()
+time.sleep(3)
+driver.refresh()
+
+driver.quit()

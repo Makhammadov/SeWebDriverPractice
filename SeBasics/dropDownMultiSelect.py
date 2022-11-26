@@ -33,13 +33,9 @@ options_list = ["choice 1", "choice 2", "choice 3", "choice 4", "choice 5", "cho
 
 #navigating to the web_page
 driver.get("https://www.jqueryscript.net/demo/Drop-Down-Combo-Tree/")
-driver.implicitly_wait(2)
-
 
 driver.find_element(By.ID, "justAnInputBox").click()
-driver.implicitly_wait(2)
 dd_list = driver.find_elements(By.CSS_SELECTOR, "span.comboTreeItemTitle")
-driver.implicitly_wait(2)
 
 #calling th function
 select_values(dd_list, options_list)
