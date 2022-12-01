@@ -13,7 +13,6 @@ from selenium.webdriver.support.ui import Select
 web_detach = Options()
 web_detach.add_experimental_option("detach", True)
 driver = webdriver.Chrome(options=web_detach, service=Service(ChromeDriverManager().install()))
-driver.implicitly_wait(5)
 
 #get to the web page
 driver.get("https://www.usps.com")
@@ -70,6 +69,8 @@ time.sleep(3)
 find_btn = driver.find_element(By.ID, "zip-by-address")
 find_btn.click()
 
+time.sleep(3)
+driver.get_screenshot_as_file("screenshot.png")
 
 time.sleep(5)
 driver.quit()
