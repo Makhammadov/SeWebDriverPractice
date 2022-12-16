@@ -22,7 +22,7 @@ target = driver.find_element(By.ID, "droppable")
 
 act_chains = ActionChains(driver)
 
-#act_chains.drag_and_drop(source, target).perform()
+act_chains.drag_and_drop(source, target).perform()
 
 time.sleep(5)
 driver.quit()
